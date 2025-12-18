@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    Shopkart Signup
+{% endblock title %}
+
+
+
+{% block content %}
+<div style="width: 50%;margin:auto;" class="shadow p-3 my-3">
+    <h3 class="m-2 text-primary ">Sign Up Form</h3>
+
+    <form action="" method="post">
+        {% csrf_token %}
+
+        {{form}}
+
+        <button type="submit" class="btn btn-primary mt-3">Register</button>
+    </form>
+
+    <div class="mt-3">
+        <a href="{% url 'signin' %}" >Already have an Account?</a>
+    </div>
+
+</div>
+
+{% endblock content %}

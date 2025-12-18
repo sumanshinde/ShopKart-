@@ -1,0 +1,374 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- start filter  -->
+<div class="row m-2 p-3 bg-white">
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=kilos" class="nav-link">
+            <img src="https://rukminim2.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100" alt="image not found"
+                width="64px" height="64px">
+            <p class="fw-semibold">Kilos</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=mobiles" class="nav-link">
+            <img src="https://rukminim2.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100" alt="image not found"
+                width="64px" height="64px">
+            <p class="fw-semibold">Mobiles</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=fashion" class="nav-link">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100"
+                alt="image not found" width="64px" height="64px">
+            <p class="fw-semibold">Fashion</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=electronics" class="nav-link">
+            <img src="https://rukminim2.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100" alt="image not found"
+                width="64px" height="64px">
+            <p class="fw-semibold">Electronics</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=home and furnitures" class="nav-link">
+            <img src="	https://rukminim2.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100" alt="image not found"
+                width="64px" height="64px">
+            <p class="fw-semibold">Home & Furniture</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=appliances" class="nav-link">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/0139228b2f7eb413.jpg?q=100"
+                alt="image not found" width="64px" height="64px">
+            <p class="fw-semibold">Appliances</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=flight booking" class="nav-link">
+            <img src="https://rukminim2.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100" alt="image not found"
+                width="64px" height="64px">
+            <p class="fw-semibold">Flight Bookings</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=beauty,toys" class="nav-link">
+            <img src="	https://rukminim2.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100" alt="image not found"
+                width="64px" height="64px">
+            <p class="fw-semibold">Beauty, Toys & More</p>
+        </a>
+    </div>
+    <div class="col text-center">
+        <a href="{% url 'index' %}?product=sports,books" class="nav-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/5209/5209031.png"
+                alt="image not found" width="64px" height="64px">
+            <p class="fw-semibold">Sports & Books</p>
+        </a>
+    </div>
+
+</div>
+
+<!-- end-filter  -->
+
+
+<!-- start carousel  -->
+
+<!-- start carousel section  -->
+<div class="row">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://rukminid2.flixcart.com/fk-p-flap/1620/270/image/14eb0fb178248c58.jpg?q=20"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://rukminid2.flixcart.com/fk-p-flap/1620/270/image/019bcd192207c657.jpeg?q=20"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://rukminid2.flixcart.com/fk-p-flap/1620/270/image/11053f0f14d2502e.jpg?q=20"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- end carousel section  -->
+
+<!-- end carousel  -->
+
+
+
+<!-- Start top offers section -->
+
+
+<div class="row p-2">
+    <h3>Top Offers</h3>
+
+    <div class="row" style="flex-wrap: nowrap;overflow-x: auto;">
+
+
+
+        <!-- start card -->
+        <div class="col my-3">
+            <div class="card border border-0 shadow" style="width: 15rem;">
+
+                <div class="w-100">
+                    <img src="https://shop.tvsmotor.com/cdn/shop/files/11_3f95a7df-3172-4a65-9087-08152b7b46b9.jpg?v=1720770284&width=1214%202x"
+                        alt="..." style="width: 100%;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">TVS Shoes</h5>
+                    <p class="card-text"> Price: 7990</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End card -->
+
+
+
+        <!-- start card -->
+        <div class="col my-3">
+            <div class="card border border-0 shadow" style="width: 15rem;">
+
+                <div class="w-100">
+                    <img src="https://shop.tvsmotor.com/cdn/shop/files/11_3f95a7df-3172-4a65-9087-08152b7b46b9.jpg?v=1720770284&width=1214%202x"
+                        alt="..." style="width: 100%;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">TVS Shoes</h5>
+                    <p class="card-text"> Price: 7990</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End card -->
+
+
+
+
+        <!-- start card -->
+        <div class="col my-3">
+            <div class="card border border-0 shadow" style="width: 15rem;">
+
+                <div class="w-100">
+                    <img src="https://shop.tvsmotor.com/cdn/shop/files/11_3f95a7df-3172-4a65-9087-08152b7b46b9.jpg?v=1720770284&width=1214%202x"
+                        alt="..." style="width: 100%;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">TVS Shoes</h5>
+                    <p class="card-text"> Price: 7990</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End card -->
+
+
+
+
+
+        <!-- start card -->
+        <div class="col my-3">
+            <div class="card border border-0 shadow" style="width: 15rem;">
+
+                <div class="w-100">
+                    <img src="https://shop.tvsmotor.com/cdn/shop/files/11_3f95a7df-3172-4a65-9087-08152b7b46b9.jpg?v=1720770284&width=1214%202x"
+                        alt="..." style="width: 100%;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">TVS Shoes</h5>
+                    <p class="card-text"> Price: 7990</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End card -->
+
+
+
+
+
+
+        <!-- start card -->
+        <div class="col my-3">
+            <div class="card border border-0 shadow" style="width: 15rem;">
+
+                <div class="w-100">
+                    <img src="https://shop.tvsmotor.com/cdn/shop/files/11_3f95a7df-3172-4a65-9087-08152b7b46b9.jpg?v=1720770284&width=1214%202x"
+                        alt="..." style="width: 100%;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">TVS Shoes</h5>
+                    <p class="card-text"> Price: 7990</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End card -->
+
+
+
+
+
+        <!-- start card -->
+        <div class="col my-3">
+            <div class="card border border-0 shadow" style="width: 15rem;">
+
+                <div class="w-100">
+                    <img src="https://shop.tvsmotor.com/cdn/shop/files/11_3f95a7df-3172-4a65-9087-08152b7b46b9.jpg?v=1720770284&width=1214%202x"
+                        alt="..." style="width: 100%;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">TVS Shoes</h5>
+                    <p class="card-text"> Price: 7990</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End card -->
+
+
+
+
+        <!-- start card -->
+        <div class="col my-3">
+            <div class="card border border-0 shadow" style="width: 15rem;">
+
+                <div class="w-100">
+                    <img src="https://shop.tvsmotor.com/cdn/shop/files/11_3f95a7df-3172-4a65-9087-08152b7b46b9.jpg?v=1720770284&width=1214%202x"
+                        alt="..." style="width: 100%;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">TVS Shoes</h5>
+                    <p class="card-text"> Price: 7990</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End card -->
+
+
+
+
+
+    </div>
+
+</div>
+
+
+<!--End  top offers section -->
+
+
+<!-- start cart section  -->
+<div class="row m-2 p-2 bg-white" style="height: calc(100vh - 70px);">
+    <!-- start filter and sorting section  -->
+    <div class="col-2 fixed-container">
+    <form action="">
+        <div class="row p-2">
+            <p class="fw-semibold fs-5">Filter by</p>
+            <ul type="none">
+                <li><a href="#" class="nav-link fw-semibold">Categories</a>
+                  
+                        {% for category in categories_list %}
+                        <div>
+                            <input type="checkbox" name="category" value="{{category.name}}" 
+                            {% if category.name in selected_categories  %}
+                              checked
+                            {% endif %} >
+                            <label for="">{{category.name}}</label>
+                        </div>
+                          
+                        {% endfor %}
+
+                      
+                 
+                </li>
+                <!-- <li><a href="#" class="nav-link">Brand</a></li>
+                <li><a href="#" class="nav-link">Gender</a></li>
+                <li><a href="#" class="nav-link">Top Rated</a></li>
+                <li><a href="#" class="nav-link">Colors</a></li>
+                <li><a href="#" class="nav-link">Shopkart Unique</a></li> -->
+            </ul>
+        </div>
+
+        <div class="row p-2">
+            <p class="fw-semibold">Sort By Price</p>
+            <select name="sort"  id="" class="form-select" >
+                <option value="">--Select--</option>
+                <option value="lth" {% if request.GET.sort == "lth" %}
+                  selected
+                {% endif %}>Low to High</option>
+                <option value="htl" {% if request.GET.sort == "htl" %}
+                  selected
+                {% endif %}>High to Low</option>
+            </select>
+           
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm">Apply</button>
+        <a href="{% url 'index' %}" class="btn btn-primary btn-sm">Clear</a>
+        </form>
+    </div>
+    <!-- end filter and sorting section  -->
+
+
+
+    <!-- start product section  -->
+    <div class="col-10 scroll-container">
+        <div class="row bg-white p-2">
+
+            {% for product in product_list %}
+
+            <!-- start card  -->
+
+            <div class="col my-3">
+                <a href="{% url 'product_details' product.pk %}" class="nav-link">
+                    <div class="card border border-0 shadow" style="width: 12rem;">
+                        <div class="w-100">
+                            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}"
+                                style="width: 100%; height: 200px; object-fit: contain; background: #f8f9fa; padding: 5px; border-radius: 8px;">
+
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">{{product.name|truncatechars:30}}</h5>
+                            <p class="card-text">Price : {{product.price}}/-</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- end card  -->
+
+            {% endfor %}
+
+
+        </div>
+    </div>
+    <!-- end product section  -->
+</div>
+
+<!-- end cart section  -->
+
+
+
+
+
+{% endblock content %}

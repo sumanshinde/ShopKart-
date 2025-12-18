@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+Shopkart | Order Success
+{% endblock title %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card p-5 shadow text-center" style="max-width: 500px; width: 100%;">
+        <div class="mb-4">
+            <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+        </div>
+
+        <h2 class="fw-bold mb-3 text-success">Order Placed Successfully!</h2>
+        <p class="mb-4 text-muted">Thank you for your purchase.</p>
+
+        <div class="alert alert-light border mb-4 text-start">
+            <p class="mb-2"><strong>Payment ID:</strong> <span class="text-secondary">{{ payment_id }}</span></p>
+            <p class="mb-0"><strong>Order ID:</strong> <span class="text-secondary">{{ order_id }}</span></p>
+        </div>
+
+        <a href="{% url 'index' %}" class="btn btn-primary btn-lg">Go to Homepage</a>
+    </div>
+</div>
+{% endblock content %}
